@@ -23,11 +23,11 @@ public class Fibonacci extends AppCompatActivity {
         int[] lista = new int[n];
         lista[0] = 0;
         lista[1] = 1;
-        for (int i = 2; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             lista[i] = lista[i-1]+lista[i-2];
         }
-        elemento(lista[n]);
+        elemento(lista[n-1]);
         soma(lista, n);
         listar(lista, n);
     }
@@ -39,7 +39,7 @@ public class Fibonacci extends AppCompatActivity {
 
     private void soma(int[] v, int n){
         int sum = 0;
-        for (int i = 2; i < n; i++)
+        for (int i = 0; i < n; i++)
         {
             sum =+ v[i];
         }
